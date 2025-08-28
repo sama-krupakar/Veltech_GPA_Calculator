@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>GPA Calculator</h1>
+
+    <form id="courseForm">
+      <input type="text" id="courseName" placeholder="Course Name" required>
+      <input type="number" id="courseCredits" placeholder="Credits" required min="1">
+      <select id="courseGrade" required>
+        <option value="">Select Grade</option>
+        <option value="S">S</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+      </select>
+      <button type="submit">Add Course</button>
+    </form>
+
+    <table id="courseTable">
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Credits</th>
+          <th>Grade</th>
+          <th>Result</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="table-actions">
+      <button id="clearBtn">Clear All Courses</button>
+      <button id="exportBtn">Export to CSV</button>
+    </div>
+
+    <div id="sgpaContainer">
+      SGPA: <a href="#" id="sgpaValue">0.00</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p class="signature">Developed by Sama Krupakar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+ 
